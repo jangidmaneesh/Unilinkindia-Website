@@ -161,7 +161,8 @@
 	</style>
 		
 	<section class="header-spacing">			
-		<div class="inner-banner-prodetails dummy-banner industry-verticals-banner" style="background-image: url({{ asset('storage/app/public/exposures/'.$banner->image) }}); background-size: cover;)">
+        {{-- style="background-image: url({{ asset('storage/app/public/exposures/'.$banner->image) }}); background-size: cover;)" --}}
+		<div class="inner-banner-prodetails dummy-banner industry-verticals-banner">
             <div class="container">
             	<div class="prodetails-banner-header" id="top-banner"> 	 <br/>
 				<span> </span></div>
@@ -183,7 +184,6 @@
 				
 				<div class="col-md-4 pull-right otherproduct-links" style="margin-top:45px;">
 					<h4>Browse our other signature products</h4>
-					<br/>
 					<ol class="list-unstyled">
 					    @foreach($banners as $ban)
 						    <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02" title="{{ $ban->title }}">{{ $ban->title }}</a></li>

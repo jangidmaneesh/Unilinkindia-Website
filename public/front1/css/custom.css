@@ -130,3 +130,38 @@
     background-color: #333;
     border-radius: 6px;
 }
+
+.wight-box {
+    padding: 20px;
+    border: solid 1px #d7d6d6;
+    border-radius: 3px;
+}
+.otherproduct-links .wight-box li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 3px 0;
+    display: block;
+}
+.wight-box ol {
+    padding-top: 8px;
+}
+article .row h2 {
+    margin: 20px 0 10px 0;
+    line-height: 28px;
+}
+.solution-details .small-panel span {
+    float: none;
+    top: 4px !important;
+}
+.solution-details .small-panel {
+    margin-bottom: 20px;
+}
+.solution-details .small-panel .panel-point {
+   float: none !important;
+   margin-left: 0 !important;
+   width: 100% !important;
+}
+.solution-details .slsmall-point {
+    display: none !important;
+}

@@ -160,8 +160,9 @@
         }
 	</style>
 		
-	<section class="header-spacing">			
-		<div class="inner-banner-prodetails dummy-banner industry-verticals-banner" style="background-image: url({{ asset('storage/app/public/banner/'.$banner->image) }}); background-size: cover;)">
+	<section class="header-spacing">		
+        {{-- style="background-image: url({{ asset('storage/app/public/banner/'.$banner->image) }}); background-size: cover;)"	 --}}
+		<div class="inner-banner-prodetails dummy-banner industry-verticals-banner">
             <div class="container">
             	<div class="prodetails-banner-header" id="top-banner"> 	 <br/>
 				<span> </span></div>
@@ -182,17 +183,18 @@
 				</div>
 				
 				<div class="col-md-4 pull-right otherproduct-links" style="margin-top:45px;">
-					<h4>Browse our other signature products</h4>
-					<br/>
-					<ol class="list-unstyled">
-					    @foreach($banners as $ban)
-						    <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02" title="{{ $ban->title }}">{{ $ban->title }}</a></li>
-					    @endforeach
-					</ol>
+                    <div class="wight-box">
+                        <h4>Browse our other signature products</h4>
+                        <ol class="list-unstyled">
+                            @foreach($banners as $ban)
+                                <li><a href="{{ route('bannerdetails', $ban->id) }}" class="small02" title="{{ $ban->title }}">{{ $ban->title }}</a></li>
+                            @endforeach
+                        </ol>
+                    </div>
 				</div>
 			</div>
          
-            <div class="row">
+            {{-- <div class="row">
 				<div class="container product-details solution-details">
 					<h3 class="demoh3"> View a Demo </h3>
 				</div>	
@@ -201,8 +203,8 @@
 				    <iframe width="100%" height="345" src="{{ $banner->video }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 		    </div>
-		    
-    		<div class="container product-details solution-details col-sm-12" style="text-align:center;">
+		     --}}
+    		<div class="container product-details solution-details col-sm-12 d-none" style="text-align:center;">
     		    <button id="btn1" onclick="scrollWin()" class="navbar-btn1" data-toggle="tooltip" data-placement="top" title="View Our Success Story">The Success Story &nbsp </button>
     		  
     		    <a href="{{ asset('storage/app/public/banner/'.$banner->attachment) }}" download> 
