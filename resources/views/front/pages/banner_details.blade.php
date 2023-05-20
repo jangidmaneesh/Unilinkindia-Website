@@ -237,11 +237,11 @@
                         </ol> --}}
 
                         <ol class="list-unstyled">
-                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
+                            <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting </a></li>
                             <li><a href="#" class="small02" title="Soft Expert Solutions">Software Export
-                                    Solutions</a></li>
+                                    Solutions </a></li>
                             <li><a href="#" class="small02" title="Odoo ERP Consulting">Shopify E-commerce
-                                    Development</a></li>
+                                    Development </a></li>
                             <li><a href="#" class="small02" title="Soft Expert Solutions">Laravel E-commerce
                                     Development</a></li>
                             <li><a href="#" class="small02" title="Odoo ERP Consulting">Odoo ERP Consulting</a></li>
